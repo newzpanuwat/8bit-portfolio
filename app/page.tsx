@@ -1,112 +1,134 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="flex flex-col items-center justify-between p-12">
+      <div className="flex mb-5 gap-6">
+        <button type="button" className="nes-btn is-primary">
+          Blogs
+        </button>
+        <button type="button" className="nes-btn is-success">
+          Theses my skills
+        </button>
+        <button type="button" className="nes-btn is-warning">
+          Experiences
+        </button>
+        <button type="button" className="nes-btn is-error">
+          Contact me!
+        </button>
+      </div>
+
+      <br />
+      <div className="mb-5">
+        <h1>Are you looking for warior software engineer or web developer ?</h1>
+      </div>
+      <div className="nes-container with-title is-centered bg-blue-200 w-[70rem] mb-5">
+        <p className="title">Greetings!</p>
+        <p>
+          My primary goal is to apply my technical expertise all throughout the full software life cycle to ensure the
+          production and delivery of products and services. My experience 7 years as a software engineer enhanced my
+          abilities in designing, implementing, testing, and upgrading software. One of my objectives is to keep updated
+          with the latest IT trends and technologies.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+      </div>
+      <button type="button" className="nes-btn is-warning">
+        Hire me, Click !
+      </button>
+
+      <br />
+      <p>::Skills::</p>
+      <div className="nes-container is-rounded bg-green-400 w-[70rem]">
+        <p>::Programming Languages</p>
+        <div className="flex mb-5 gap-3">
+          <a href="#" className="nes-badge">
+            <span className="is-warning">Javascript</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-primary">Typescript</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error mr-3">Ruby</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Java</span>
+          </a>
+          <a href="https://www.python.org/" target="_blank" className="nes-badge">
+            <span className="is-primary">Python</span>
           </a>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <br />
+      <div className="nes-container is-rounded bg-red-200 w-[70rem]">
+        <p>::Framework</p>
+        <div className="flex mb-5 gap-3">
+          <a href="#" className="nes-badge">
+            <span className="is-primary mr-3">React.js</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-warning">Next.js</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Nest.js</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">RoR</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-success">Express</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-success">Spring</span>
+          </a>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <br />
+      <div className="nes-container is-rounded bg-green-200 w-[70rem]">
+        <p>::Testing</p>
+        <div className="flex mb-5 gap-3">
+          <a href="#" className="nes-badge">
+            <span className="is-primary mr-3">Vitest</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Jest</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Rspec</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-warning">jUnit</span>
+          </a>
+        </div>
+      </div>
+      <br />
+      <div className="nes-container is-rounded bg-purple-200 w-[70rem]">
+        <p>::Database</p>
+        <div className="flex mb-5 gap-3">
+          <a href="#" className="nes-badge">
+            <span className="is-primary mr-3">Mysql</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-success">Mongo DB</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Redis</span>
+          </a>
+        </div>
+      </div>
+      <br />
+      <div className="nes-container is-rounded bg-blue-200 w-[70rem]">
+        <p>::Deployment</p>
+        <div className="flex mb-5 gap-3">
+          <a href="#" className="nes-badge">
+            <span className="is-primary">Docker</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-error">Jenkins</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-primary">k8s</span>
+          </a>
+          <a href="#" className="nes-badge">
+            <span className="is-warning">k3s</span>
+          </a>
+        </div>
       </div>
     </main>
   );
