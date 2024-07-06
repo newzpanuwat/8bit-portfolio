@@ -3,13 +3,15 @@ import React, { useState, useEffect } from "react";
 
 export default function Loading({ onComplete }: any) {
   const [progress, setProgress] = useState(0);
-  let values: Array<number> = [];
   const [isVisible, setIsVisible] = useState(true);
   const [loadingText, setLoadingText] = useState("Loading...");
+
+  let values: Array<number> = [];
   let index: number = 0;
 
   const generateRandomNumbers = (): Array<number> => {
     const max = 100;
+
     values = Array.from({ length: 2 }, () => Math.floor(Math.random() * max));
     return values;
   };

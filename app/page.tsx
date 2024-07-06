@@ -168,6 +168,25 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <br />
+            {/* Contact */}
+            <p id="contact" className="title">
+              ::Contact::
+            </p>
+            <div className="flex items-center mb-5 gap-6">
+              <a href="https://github.com/newzpanuwat" target="_blank">
+                <i className="nes-icon github is-large"></i>
+              </a>
+              <a href="mailto:panuwat.brd@gmail.com" target="_blank">
+                <i className="nes-icon google is-large"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/newzpanuwat/" target="_blank">
+                <i className="nes-icon linkedin is-large"></i>
+              </a>
+              <a href="https://medium.com/@newzpanuwat" target="_blank">
+                <i className="nes-icon medium is-large"></i>
+              </a>
+            </div>
           </main>
         </div>
       )}
