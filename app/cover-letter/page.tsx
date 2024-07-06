@@ -1,22 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Loading from "../components/loading";
 
-const mybutton = document.getElementById("topBtn") as HTMLButtonElement;
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
 export default function Home() {
+  useEffect(() => {
+    const mybutton = document.getElementById("topBtn") as HTMLButtonElement;
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }, []);
   const [loadingComplete, setLoadingComplete] = useState(false);
 
   const handleComplete = () => {
@@ -204,8 +205,8 @@ export default function Home() {
                   <p style={{ margin: "1rem" }}>
                     <a href="https://poke-v1-six.vercel.app/" target="_blank">
                       Pokedex/v1
-                    </a>{" "}
-                    The webpage "PokeAPI" at was created during a hackathon in just two days. It allows users to search
+                    </a>
+                    The webpage `PokeAPI` at was created during a hackathon in just two days. It allows users to search
                     for Pokémon by name or ID and provides detailed information, including stats, abilities, and images.
                     This project showcases the rapid development of a functional and user-friendly interface for
                     interacting with Pokémon data.
