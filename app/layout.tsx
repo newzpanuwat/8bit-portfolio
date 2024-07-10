@@ -6,7 +6,7 @@ import "nes.css/css/nes.min.css";
 const pressStart2P = Press_Start_2P({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "::Portfolio::ppnwt",
+  title: "::8bit-Portfolio::ppnwt",
   description: "My Portfolio",
 };
 

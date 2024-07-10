@@ -2,7 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## ::Portfolio:: 8bit version
 
-- Blogs
+![alt text](screenshot-web1.png)
+
+### Features
+
 - Skills
-- Experience
+- Blogs
+- Mini Projects & POC
 - Contact me!
+
+### Packages
+
+- Nextjs 14
+- nes.css
+- styled-components
+- playwright
