@@ -1,10 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Loading from "../components/loading";
+import Navigation from "../components/navigation";
 import Image from "next/image";
 import thumnail from "../../public/assets/facetec-1.png";
 import jwks from "../../public/assets/jwtsjwks_pubprivatejwt.png";
 import profile from "../../public/assets/cv-profile.png";
+import redisImage from "../../public/assets/redis-image.png";
+import { navigationMenus } from "../data";
 
 export default function Home() {
   useEffect(() => {
@@ -22,8 +25,8 @@ export default function Home() {
       scrollFunction();
     };
   }, []);
-  const [loadingComplete, setLoadingComplete] = useState(false);
 
+  const [loadingComplete, setLoadingComplete] = useState(false);
   const handleComplete = () => {
     setLoadingComplete(true);
   };
@@ -37,23 +40,8 @@ export default function Home() {
       {loadingComplete && (
         <div id="hello">
           <main className="flex flex-col items-center justify-between p-4">
-            <div className="navbar flex mb-5 gap-6">
-              <a href="#hello">
-                <span className="nes-btn is-primary">Hello!</span>
-              </a>
-              <a href="#skills">
-                <span className="nes-btn is-success">Theses my skills</span>
-              </a>
-              <a href="#exp">
-                <span className="nes-btn is-warning">Experiences</span>
-              </a>
-              <a href="#poc">
-                <span className="nes-btn is-primary">Others</span>
-              </a>
-              <a href="#contact">
-                <span className="nes-btn is-error"> Contact me!</span>
-              </a>
-            </div>
+            <Navigation list={navigationMenus} />
+
             {/* Greetings */}
             <div className="nes-container with-title is-centered bg-blue-200 w-[70rem] mb-5">
               <p className="title">Greetings!</p>
@@ -230,7 +218,7 @@ export default function Home() {
               <p id="poc" className="title">
                 ::Others & POC::
               </p>
-              {/* pokedex */}
+              {/* pokedex
               <div className="nes-container is-rounded bg-blue-300 w-[70rem]">
                 <p>Pokedex/v1</p>
                 <hr></hr>
@@ -251,21 +239,44 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              <br /> */}
+              {/* pokedex */}
+              <div className="nes-container is-rounded bg-white w-[70rem]">
+                <a href="https://github.com/newzpanuwat/poc-redis" target="_blank">
+                  POC::Redis Queue
+                </a>
+                <hr></hr>
+                <div className="flex mb-5 ">
+                  <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <Image
+                      id="redis-image"
+                      src={redisImage}
+                      alt="redis-image"
+                      style={{ width: "300", height: "auto", margin: "2rem" }}
+                    />
+                  </div>
+                  <p style={{ margin: "2rem" }}>
+                    Redis, with its support for list and set data structures, can be effectively used as a message
+                    queue. This means that it can handle multiple tasks that are lined up for processing. The tasks can
+                    be processed either immediately or at a certain scheduled time. The ability to use Redis as a queue
+                    opens up a wide range of possibilities for handling distributed jobs and messages
+                  </p>
+                </div>
+              </div>
               <br />
               {/* facetec */}
               <div className="nes-container is-rounded bg-white w-[70rem]">
-                <p>POC::Facetec(development)</p>
+                <a href="https://github.com/newzpanuwat/poc-facetec" target="_blank">
+                  POC/facetec(development)
+                </a>
                 <hr></hr>
                 <div className="flex mb-5">
                   <Image
                     src={thumnail}
                     alt="facetec-img"
-                    style={{ width: "20%", height: "40%", gap: "2", marginTop: "0.5rem" }}
+                    style={{ width: "20%", height: "40%", marginTop: "0.5rem" }}
                   />
                   <p style={{ margin: "1rem" }}>
-                    <a href="https://github.com/newzpanuwat/poc-facetec" target="_blank">
-                      POC/facetec
-                    </a>
                     This POC is contain features of liveness-3d, 2d-2d with Browser SDK facetec, You can fork this repo,
                     then improve with another processor e.g. PhotoIDMatch, Enrollment, this POC can scan your face with
                     development server, but in development account with limte exceed limit from facetec
@@ -275,7 +286,9 @@ export default function Home() {
               <br />
               {/* auth/jwks-express */}
               <div className="nes-container is-rounded bg-white w-[70rem]">
-                <p>POC::JWTKS Auth</p>
+                <a href="https://github.com/newzpanuwat/express-auth-poc" target="_blank">
+                  POC/JWTKS Auth
+                </a>
                 <hr></hr>
                 <div className="flex mb-5">
                   <Image
@@ -284,9 +297,6 @@ export default function Home() {
                     style={{ width: "20%", height: "40%", gap: "2", marginTop: "0.5rem" }}
                   />
                   <p style={{ margin: "1rem" }}>
-                    <a href="https://github.com/newzpanuwat/express-auth-poc" target="_blank">
-                      POC/JWTKS Auth
-                    </a>
                     In a modern web application, particularly one that involves user-specific content or restricted
                     access areas, authentication and secure token management are critical. Using JSON Web Tokens (JWTs)
                     along with JWKS (JSON Web Key Set) provides a robust mechanism for ensuring secure access and
