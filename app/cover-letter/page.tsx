@@ -72,7 +72,7 @@ export default function Home() {
               <div className="flex">
                 <Image src={profile} alt="profile-img" style={{ width: "22%", gap: "3", marginTop: "1rem" }} />
                 <ul className="nes-list is-disc ml-8 mt-4">
-                  <li>I'm passionate about learning and development</li>
+                  <li>I`m passionate about learning and development</li>
                   <li>Develop future goals for self-improvement</li>
                   <li>Big motivation with sofware engineering</li>
                   <li>Latte & Americano addicted</li>
