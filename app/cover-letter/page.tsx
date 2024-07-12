@@ -218,29 +218,7 @@ export default function Home() {
               <p id="poc" className="title">
                 ::Others & POC::
               </p>
-              {/* pokedex
-              <div className="nes-container is-rounded bg-blue-300 w-[70rem]">
-                <p>Pokedex/v1</p>
-                <hr></hr>
-                <div className="flex mb-5">
-                  <img
-                    id="pokemon-image"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
-                    style={{ width: "100%", height: "100%", gap: "2" }}
-                  ></img>
-                  <p style={{ margin: "1rem" }}>
-                    <a href="https://poke-v1-six.vercel.app/" target="_blank">
-                      Pokedex/v1
-                    </a>
-                    The webpage `PokeAPI` at was created during a hackathon with pure JS & CSS in just 24 hrs. It allows
-                    users to search for Pokémon by name or ID and provides detailed information, including stats,
-                    abilities, and images. This project showcases the rapid development of a functional and
-                    user-friendly interface for interacting with Pokémon data.
-                  </p>
-                </div>
-              </div>
-              <br /> */}
-              {/* pokedex */}
+              {/* redis */}
               <div className="nes-container is-rounded bg-white w-[70rem]">
                 <a href="https://github.com/newzpanuwat/poc-redis" target="_blank">
                   POC::Redis Queue
