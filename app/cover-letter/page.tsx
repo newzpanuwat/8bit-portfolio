@@ -46,10 +46,7 @@ export default function Home() {
             <div className="nes-container with-title is-centered bg-blue-200 w-[70rem] mb-5">
               <p className="title">Greetings!</p>
               <p>
-                My primary goal is to apply my technical expertise all throughout the full software life cycle to ensure
-                the production and delivery of products and services. My experiences 7 years as a software engineer
-                enhanced my abilities in designing, implementing, testing, and upgrading software. One of my objectives
-                is to keep updated with the latest IT trends and technologies.
+                My primary goal is to utilize my technical expertise throughout the full software development life cycle to ensure the production and delivery of high-quality products and services. My experiences as a software engineer have enhanced my abilities in designing, implementing, testing, and continuously improving software. I strive to stay updated with the latest industry trends and technologies.
               </p>
             </div>
 
