@@ -5,7 +5,7 @@ import Navigation from "../components/navigation";
 import Image from "next/image";
 import thumnail from "../../public/assets/facetec-1.png";
 import jwks from "../../public/assets/jwtsjwks_pubprivatejwt.png";
-import profile from "../../public/assets/cv-profile.png";
+import profile from "../../public/assets/me.svg";
 import redisImage from "../../public/assets/redis-image.png";
 import { navigationMenus } from "../data";
 
@@ -55,7 +55,7 @@ export default function Home() {
               <p>Mr.Panuwat Boonrod - Software Engineer</p>
               <hr></hr>
               <div className="flex">
-                <Image src={profile} alt="profile-img" style={{ width: "22%", gap: "3", marginTop: "1rem" }} />
+                <Image src={profile} alt="profile-img" style={{ width: "15%", height: "auto", margin: "1rem", paddingRight: '1rem' }} />
                 <ul className="nes-list is-disc ml-8 mt-4">
                   <li>I`m passionate about learning and development</li>
                   <li>Develop future goals for self-improvement</li>
